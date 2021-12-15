@@ -1,0 +1,41 @@
+.startButton {
+  border-bottom: 2px solid #09d687 !important;
+}
+
+.stopButton {
+  border-bottom: 2px solid #eb326a !important;
+}
+
+.noContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  padding: 2rem 0;
+
+  font-family: Poppins, sans-serif;
+  text-align: center;
+
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  svg {
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+
+  .lastStatus {
+    margin-top: 1rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid #ddd;
+
+    text-decoration: ita;
+  }
+}

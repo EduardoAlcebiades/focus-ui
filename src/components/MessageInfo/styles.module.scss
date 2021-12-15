@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  color: #434361;
+
+  .iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: stretch;
+
+    padding: 0.3rem;
+
+    min-width: 2.5rem;
+    height: 2.5rem;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    color: #777777;
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: .85rem;
+    }
+
+    font-size: 0.95rem;
+  }
+}

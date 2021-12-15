@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+  box-shadow: 0 0 64px #ddd;
+  border-radius: 0.2rem;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    padding: 1rem;
+
+    color: #1f275c;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #f0f0ee98;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+
+  .title {
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 1rem 2rem;
+
+    color: #9514ff;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 4rem;
+
+      padding: 0.3rem 0.5rem;
+      background: #9514ff18;
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin: 0 1rem;
+    padding: 2rem 0;
+
+    border-top: 1px solid #ddd;
+
+    button {
+      flex-direction: column;
+      justify-content: center;
+
+      svg {
+        font-size: 18pt;
+      }
+    }
+
+    .currentExercise {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 0.5rem 0;
+
+      gap: 1rem;
+
+      > div + div {
+        padding-top: 1.5rem;
+        border-top: 1px solid #ddd;
+      }
+    }
+  }
+
+  .noContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    margin: 5rem;
+
+    text-align: center;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    padding: 1.2rem;
+
+    background: #f0f0ee98;
+    border-top: 1px solid #ddd;
+
+    > button {
+      flex: 1;
+    }
+  }
+
+  .currentStatus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background: #f0f0ee98;
+    border-top: 1px solid #ddd;
+
+    font-weight: bold;
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 1rem;
+
+      span {
+        color: #9514ff;
+      }
+    }
+  }
+
+  @media (min-width: 700px) {
+    .header {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  height: 100%;
+
+  padding: 1.5rem;
+
+  overflow: auto;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid #ddd;
+
+    .title {
+      color: #1b133d;
+    }
+
+    .subTitle {
+      color: gray;
+      font-size: 0.9rem;
+    }
+  }
+
+  form {
+    margin: auto 0;
+  }
+
+  @media (min-width: 700px) {
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+
+    .header {
+      text-align: center;
+
+      padding: 1rem 1.5rem;
+    }
+
+    form {
+      margin: 0;
+    }
+  }
+}

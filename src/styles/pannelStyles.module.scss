@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  .line {
+    display: flex;
+    align-items: flex-end;
+
+    gap: 0.5rem;
+
+    > * {
+      flex: 1;
+    }
+  }
+
+  .addButton {
+    width: 100%;
+
+    padding: 0.5rem;
+
+    border: 0;
+    outline: 0;
+
+    background: #0000000e;
+
+    border: 3px dashed #ddd;
+
+    transition: transform 0.1s;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .buttonsGroup {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    margin-top: 1rem;
+
+    > button {
+      flex: 1;
+    }
+  }
+
+  .editForm {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background: white;
+  }
+
+  .formCardList {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    overflow: auto;
+  }
+
+  .cardList {
+    flex: 1;
+
+    padding: 1rem;
+
+    overflow: auto;
+
+    background: white;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+
+    box-shadow: 2px 2px 8px #0000001a;
+
+    margin-top: 1rem;
+
+    .title {
+      color: #9514ff;
+    }
+
+    ul {
+      margin: auto 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        margin: 0.5rem 0;
+
+        color: #525255;
+
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 0.5rem;
+
+      padding-top: 1rem;
+
+      border-top: 1px solid #ddd;
+    }
+  }
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+
+    height: 100%;
+    min-height: 35rem;
+
+    overflow: auto;
+
+    .editForm,
+    .cardList {
+      height: fit-content;
+      max-height: 100%;
+    }
+
+    .addButton,
+    .card {
+      flex: 1;
+      align-self: stretch;
+    }
+
+    .editForm {
+      padding: 1.5rem;
+    }
+
+    .formCardList {
+      padding: 1rem;
+
+      .addButton {
+        align-self: center;
+
+        min-width: 18rem;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .cardList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 2rem;
+
+      padding: 1.5rem;
+
+      .addButton {
+        min-width: 20rem;
+        max-width: calc(50% - 0.75rem);
+      }
+    }
+
+    .card {
+      min-width: fit-content;
+      width: 20rem;
+      max-width: calc(50% - 0.75rem);
+
+      margin-top: 0;
+
+      .footer {
+        gap: 1rem;
+      }
+    }
+  }
+}

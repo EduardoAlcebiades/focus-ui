@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+
+  padding: 3rem 1.5rem;
+
+  border-radius: 0.2rem;
+  background: white;
+  box-shadow: 0 0 64px #ddd;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 4rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    text-align: center;
+    color: #9514ff;
+
+    &:before,
+    &:after {
+      flex: 1;
+
+      content: "";
+
+      height: 1px;
+
+      background: #ddd;
+    }
+  }
+}

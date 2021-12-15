@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+
+    min-width: fit-content;
+  
+    border: 0;
+    outline: 0;
+  
+    border-radius: 0.2rem;
+  
+    transition: filter 0.2s;
+  
+    overflow: hidden;
+  
+    &:active:not(:disabled) {
+      filter: brightness(0.9);
+    }
+  
+    .content {
+      font-size: .9rem;
+      font-weight: bold;
+  
+      margin: auto;
+      padding: 0.5rem;
+    }
+  
+    .iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      align-self: stretch;
+
+      margin: auto 0;
+  
+      padding: 0.3rem;
+  
+      width: 2.5rem;
+      height: 2.5rem;
+  
+      svg {
+        font-size: 1rem;
+      }
+    }
+
+    &:disabled {
+      opacity: .6;
+    }
+  }
